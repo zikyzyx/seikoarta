@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Penjualan Makanan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Web Penjualan Makanan</h1>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu Makanan</h2>
+            <div class="menu-item">
+                <h3>Nasi Goreng</h3>
+                <p>Harga: $10</p>
+                <button onclick="addToCart('Nasi Goreng', 10)">Tambah ke Keranjang</button>
+            </div>
+            <div class="menu-item">
+                <h3>Mie Goreng</h3>
+                <p>Harga: $8</p>
+                <button onclick="addToCart('Mie Goreng', 8)">Tambah ke Keranjang</button>
+            </div>
+            <!-- Tambahkan lebih banyak item menu di sini -->
+        </section>
+
+        <section id="cart">
+            <h2>Keranjang</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total-price">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
